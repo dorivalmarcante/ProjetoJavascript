@@ -1,0 +1,1 @@
+alert("Scripts do Modulo 2")
