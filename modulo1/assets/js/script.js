@@ -6,7 +6,7 @@ let nome = "Dorival" //string
 let city = "São Paulo" //string
 let estado = "SP" // string
 let logado = true // boolean
-let lista = ["farinha","ovo","massa","corante","acucar"] // object
+let lista = ["farinha","ovo","massa","corante","acucar"] // array
 let nomeCompleto = { nome: "Bonieky", idade: 90 } // object
 
 console.log(nome)
@@ -25,9 +25,9 @@ console.log(typeof lista)
 console.log(typeof nomeCompleto)
 
 // Comentário de uma linha só
-/* Comentario
+/* Comentário
 de 
-varias
+várias
 linhas */
 
 let carro = "Ferrari"
@@ -38,16 +38,15 @@ console.log (carro)
 console.log (bolo)
 console.log (cidade)
 
-// o ; serve para dizer ao javascrip que aquela trecho de codigo nao tem mais instruções, porém ele não é obrigatorio.
-// ele se torna obrigatorio quando vc coloca mais de um comando na mesma linha
-// let e var servem pra criar variaveis. porém o var funciona em qualquer contexto, ja o let funciona somente para o contexto que ela foi criada
-// alem do let e do var, existe o const, porém ele nao permite a troca de valor. É uma variável constante.
+/* o ; serve para dizer ao javascript que aquela trecho de código não tem mais instruções, porém ele não é obrigatorio.
+ele se torna obrigatório quando vc coloca mais de um comando na mesma linha
+let e var servem pra criar variáveis. Porém o var funciona em qualquer contexto, ja o let funciona somente para o contexto que ela foi criada.
+Além do let e do var, existe o const, porém ele nao permite a troca de valor. É uma variável constante. */
 
-let nome2 = "Dorival";
-let sobrenome2 = "Marcante";
+let nome2 = "Dorival"; let sobrenome2 = "Marcante";
 
-// voce pode declarar a variavel assim:  let nomeCompleto2 = nome2 + ' ' + sobrenome2; ou usando template string, que fica assim: let nomeCompleto2 = ``
-// o que diferencia a declaração de variavel para a template string é o modo de abrir, que usa 2 crases e voce pode rodar codigo java dentro dele, por exemplo:
+// Você pode declarar a variável assim:  let nomeCompleto2 = nome2 + ' ' + sobrenome2; ou usando template string, que fica assim: let nomeCompleto2 = ``
+// o que diferencia a declaração de variável para a template string é o modo de abrir, que usa 2 crases e você pode rodar código java dentro dele, por exemplo:
 
 let nomeCompleto2 = `${nome2} ${sobrenome2}`
 let idade2 = 41;
