@@ -1,6 +1,6 @@
 alert("Scripts do Modulo 2")
 
-// Aula 3
+// Aula 3 - Como usar uma função
 
 function gravity() {
     console.log("A Gravidade do planeta é: ")
@@ -9,7 +9,7 @@ function gravity() {
 
 gravity()
 
-// Aula 4
+// Aula 4 - Passando parametros em uma função
 
 function somar(n1, n2) {
     let resultado = n1 + n2;
@@ -25,7 +25,7 @@ function nomeCompleto (nome, sobrenome) {
 nomeCompleto("Dorival","Marcante");
 nomeCompleto("João","Silva");
 
-// Aula 5
+// Aula 5 - Retorno da função
 
 function nomeCompleto2(nome, sobrenome) {
     return `${nome} ${sobrenome}`
@@ -34,7 +34,7 @@ function nomeCompleto2(nome, sobrenome) {
 let completo = nomeCompleto2("Bonieky", "Lacerda");
 console.log(completo);
 
-// Aula 6
+// Aula 6 - Função com retorno condicional
 
 function maiorDeIdade (idade) {
     if(idade >= 18) {
@@ -52,7 +52,7 @@ if (verificacao) {
     console.log("É menor de idade");
 }
 
-// Aula 7
+// Aula 7 - Exercício de funções
 
 /* Calcule a porcentagem entre 2 numeros.
 Exemplo: 25% de 40 é 10
@@ -69,7 +69,7 @@ let y = 10;
 let pct = calcPct(x,y);
 console.log(`${pct}% de ${x} é ${y}`);
 
-// Aula 8
+// Aula 8 - Exercício de funções
 
 /* Calcule o preço do imóvel
 - m2 = 3.000
@@ -121,7 +121,7 @@ let quartos2 = 1;
 let preco2 = calcularImovel2(metragem2, quartos2);
 console.log(`A casa custa R$ ${preco2}`);
 
-// Aula 09
+// Aula 09 - Exercício de funções
 
 /* Crie uma função que valide usuário e senha.
 Usuário correto: pedro
@@ -142,3 +142,70 @@ if (validacao) {
 } else {
     console.log('Acesso NEGADO!')
 }
+
+// Aula 10 - Arrow function
+
+const somar1 = (x, y) => {
+   return x + y;
+}
+
+const somar2 = (x,y) => x + y;
+
+const sobrenome = sob => 'Dorival ' + sob;
+
+console.log(somar1(10,5));
+console.log(somar2(10,5));
+console.log(sobrenome('Marcante'));
+
+// Aula 11 - Variáveis dentro de funções
+
+let count = 0;
+
+function add() {
+    let count = 0;
+    count++;
+}
+
+add();
+add();
+console.log(count)
+
+// Aula 12 - Funções dentro de funções
+
+function addSquares(a,b) {
+    function square(x) {
+        return x * x;
+    }
+
+    const square2 = (x) => x*x;
+
+    let sqrA = square(a);
+    let sqrB = square(b);
+        
+    let sqr2A = square2(a);
+    let sqr2B = square2(b);
+    return (sqrA + sqrB) + (sqr2A + sqr2B);
+}
+
+console.log(addSquares(2, 3));
+
+// Aula 13 - Introdução a Array
+
+let colors = ['blue','red','green'];
+console.log(colors[1]);
+
+let nomes = ['Junior','Kelly','Katia'];
+let lista = ['Creusa','Dorival',nomes]
+
+console.log(lista);
+
+let lista2 = ['blabla',['xx','yy']];
+
+console.log(lista2);
+
+console.log(lista2[0]);
+console.log(lista2[1][0])
+
+let segundo = lista2[1];
+console.log(segundo[0])
+
