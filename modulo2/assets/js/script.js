@@ -209,3 +209,36 @@ console.log(lista2[1][0])
 let segundo = lista2[1];
 console.log(segundo[0])
 
+// Aula 14 - Operações básicas de array
+
+let ingredientes = [
+    'agua',
+    'farinha',
+    'ovo',
+    'corante',
+    'sal'
+]
+
+ingredientes.push('cebola')
+
+console.log(`Total de ingredientes: ${ingredientes.length}`)
+console.log(ingredientes)
+
+// Aula 15 - Exercício de array #7
+
+//1. NO array abaixo, qual o numero que pega a Ferrari?
+let carros = ['BMW', 'Ferrari', 'Mercedes'] ;
+console.log('1. ' + carros[1]);
+
+//2. Troque a Ferrari por Audi
+carros[1] = 'Audi';
+console.log('2. Lista com Audi');
+console.log(carros);
+
+//3. Adicione o Volvo na lista
+carros.push('Volvo');
+console.log('3. Lista com Volvo');
+console.log(carros);
+
+//4. Exiba quantos itens tem no array
+console.log(`4. Itens no array: ${carros.length}`);
