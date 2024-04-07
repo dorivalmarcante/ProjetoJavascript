@@ -278,3 +278,18 @@ let personagem2 = {
 }
 
 console.log(personagem2.carros[0].cor);
+
+// Aula 18 - Função dentro de objeto
+
+let pessoa = {
+    nome: 'Bonieky',
+    sobrenome: 'Lacerda',
+    idade: 90,
+    nomeCompleto: function () {
+        return this.nome + ' ' + this.sobrenome;
+        // return `${this.nome} ${this.sobrenome}`;
+    }
+}
+
+console.log(pessoa.nomeCompleto());
+
