@@ -293,3 +293,29 @@ let pessoa = {
 
 console.log(pessoa.nomeCompleto());
 
+// Aula 19 - O loop for
+
+for (let n = 1; n <= 10; n++) {
+    console.log('Frase qualquer ' + n);
+}
+
+// Aula 20 - Dando loop em arrays
+
+let cores = ['Preto', 'Branco', 'Azul', 'Vermelho'];
+
+cores.push('Verde');
+
+// 3 formas de usar loop no array
+
+for (let n = 0; n < cores.length; n++) {
+    console.log(cores[n]);
+}
+
+for(let i in cores) {
+    console.log(cores[i]);
+}
+
+for (let cor of cores) {
+    console.log(cor);
+}
+
